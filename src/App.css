@@ -1,0 +1,46 @@
+/* Tailwind Setup (make sure this is in your index.css) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default state for larger screens (desktop) */
+.left-sidebar {
+  display: block;
+}
+
+/* For mobile devices - Hide sidebar */
+@media (max-width: 768px) {
+  .left-sidebar {
+    display: none !important;
+  }
+}
+
+a {
+  color: black !important; /* Default link color */
+  text-decoration: none !important; /* Remove underline if needed */
+}
+
+a:visited {
+  color: black !important; /* Prevent visited links from turning purple */
+}
+
+
+/* Custom Global Styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2937; /* Dark background color */
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+}
